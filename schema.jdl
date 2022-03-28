@@ -1,0 +1,9 @@
+@dto(mapstruct)
+@service(serviceImpl)
+@filter
+@paginate(infinite-scroll)
+entity Boat {
+	name String required maxlength(50)
+	description String required maxlength(1024)
+	pic ImageBlob
+}
